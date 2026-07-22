@@ -1,15 +1,37 @@
-import streamlit as st
+from agents.coordinator import CoordinatorAgent
+from agents.reminder import ReminderAgent
 
-st.set_page_config(
-    page_title="CareMate AI",
-    page_icon="🩺",
-    layout="wide"
-)
 
-st.title("CareMate AI")
+def main():
 
-st.subheader("Agentic Elderly Care Assistant")
+    coordinator = CoordinatorAgent()
+    reminder = ReminderAgent()
 
-st.write("Welcome to CareMate AI!")
+    print("=" * 50)
+    print("CareMate AI")
+    print("=" * 50)
 
-st.success("Streamlit is working successfully.")
+    while True:
+
+        message = input("\nYou: ")
+
+        if message.lower() == "exit":
+            break
+
+        selected_agent = coordinator.route(message)
+
+        print(f"\nCoordinator selected: {selected_agent}")
+
+        if selected_agent == "Reminder":
+
+            response = reminder.run(message)
+
+        else:
+
+            response = "This agent has not been implemented yet."
+
+        print(f"\nCareMate: {response}")
+
+
+if __name__ == "__main__":
+    main()
