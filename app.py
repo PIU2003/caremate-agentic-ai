@@ -4,18 +4,12 @@ from agents import health
 from agents import conversation
 from agents import alert
 from agents.coordinator import CoordinatorAgent
-from agents.reminder import ReminderAgent
-from agents.health import HealthAgent
-from agents.conversation import ConversationAgent
-from agents.alert import AlertAgent
+from agents.manager import AgentManager
 
 def main():
 
     coordinator = CoordinatorAgent()
-    reminder = ReminderAgent()
-    health = HealthAgent()
-    conversation = ConversationAgent()
-    alert = AlertAgent()
+    manager = AgentManager()
 
     print("=" * 50)
     print("CareMate AI")
@@ -32,25 +26,9 @@ def main():
 
         print(f"\nCoordinator selected: {selected_agent}")
 
-        if selected_agent == "Reminder":
+        response = manager.run(selected_agent, message)
 
-            response = reminder.run(message)
-
-        elif selected_agent == "Health":
-
-            response = health.run(message)
-
-        elif selected_agent == "Conversation":
-
-         response = conversation.run(message)
-
-        elif selected_agent == "Alert":
-
-            response =alert.run(message)
-
-        else:
-
-            response = "This agent has not been implemented yet."
+        
         print(f"\nCareMate: {response}")
 
 
