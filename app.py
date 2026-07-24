@@ -1,19 +1,24 @@
-from email import message
+from database.database import create_tables
+from workflow.graph import graph
 
-from agents import health
-from agents import conversation
-from agents import alert
-from agents.coordinator import CoordinatorAgent
-from agents.manager import AgentManager
+create_tables()
+
 
 def main():
-
-    coordinator = CoordinatorAgent()
-    manager = AgentManager()
 
     print("=" * 50)
     print("CareMate AI")
     print("=" * 50)
+
+    state = {
+        "message": "",
+        "selected_agent": "",
+        "response": "",
+        "chat_history": [],
+        "reminders": [],
+        "health_notes": [],
+        "summaries": [],
+    }
 
     while True:
 
@@ -22,14 +27,12 @@ def main():
         if message.lower() == "exit":
             break
 
-        selected_agent = coordinator.route(message)
+        state["message"] = message
 
-        print(f"\nCoordinator selected: {selected_agent}")
+        state = graph.invoke(state)
 
-        response = manager.run(selected_agent, message)
-
-        
-        print(f"\nCareMate: {response}")
+        print(f"\nCoordinator selected: {state['selected_agent']}")
+        print(f"\nCareMate: {state['response']}")
 
 
 if __name__ == "__main__":

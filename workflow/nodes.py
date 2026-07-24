@@ -6,6 +6,13 @@ from agents.health import HealthAgent
 from agents.conversation import ConversationAgent
 from agents.alert import AlertAgent
 from agents.summary import SummaryAgent
+from database.database import (
+    save_conversation,
+    save_reminder,
+    save_health_note,
+    save_summary,
+    get_reminders,
+)
 
 coordinator = CoordinatorAgent()
 reminder = ReminderAgent()
@@ -27,6 +34,14 @@ def reminder_node(state: CareMateState):
 
     response = reminder.run(state["message"])
 
+    print(">>> save_reminder() called")
+
+
+    save_reminder(
+        state["message"],
+        response
+    )
+
     reminders = state["reminders"].copy()
 
     reminders.append(
@@ -45,6 +60,10 @@ def reminder_node(state: CareMateState):
 def health_node(state: CareMateState):
 
     response = health.run(state["message"])
+    save_health_note(
+        state["message"],
+        response
+    )
 
     health_notes = state["health_notes"].copy()
 
@@ -79,6 +98,10 @@ def conversation_node(state: CareMateState):
     message = context + "\nCurrent user message:\n" + state["message"]
 
     response = conversation.run(message)
+    save_conversation(
+        state["message"],
+        response
+    )
 
     chat_history = history.copy()
 
@@ -104,7 +127,10 @@ def alert_node(state: CareMateState):
 def summary_node(state: CareMateState):
 
     response = summary.run(state["message"])
-
+    save_summary(
+        state["message"],
+        response
+    )
     summaries = state["summaries"].copy()
 
     summaries.append(
