@@ -1,3 +1,4 @@
+from workflow import state
 from workflow.state import CareMateState
 
 from agents.coordinator import CoordinatorAgent
@@ -6,13 +7,10 @@ from agents.health import HealthAgent
 from agents.conversation import ConversationAgent
 from agents.alert import AlertAgent
 from agents.summary import SummaryAgent
-from database.database import (
-    save_conversation,
-    save_reminder,
-    save_health_note,
-    save_summary,
-    get_reminders,
-)
+from tools.conversation_tool import ConversationTool
+from tools.reminder_tool import ReminderTool
+from tools.health_tool import HealthTool
+from tools.summary_tool import SummaryTool
 
 coordinator = CoordinatorAgent()
 reminder = ReminderAgent()
@@ -20,6 +18,11 @@ health = HealthAgent()
 conversation = ConversationAgent()
 alert = AlertAgent()
 summary = SummaryAgent()
+
+conversation_tool = ConversationTool()
+reminder_tool = ReminderTool()
+health_tool = HealthTool()
+summary_tool = SummaryTool()
 
 
 def coordinator_node(state: CareMateState):
@@ -32,13 +35,29 @@ def coordinator_node(state: CareMateState):
 
 def reminder_node(state: CareMateState):
 
-    response = reminder.run(state["message"])
+    message = state["message"]
 
-    print(">>> save_reminder() called")
+    intent = reminder.detect_intent(message)
 
+    # -----------------------------
+    # VIEW REMINDERS
+    # -----------------------------
+    if intent == "VIEW":
 
-    save_reminder(
-        state["message"],
+        response = reminder_tool.format_reminders()
+
+        return {
+            "response": response,
+            "reminders": state["reminders"],
+        }
+
+    # -----------------------------
+    # CREATE REMINDER
+    # -----------------------------
+    response = reminder.run(message)
+
+    reminder_tool.save(
+        message,
         response
     )
 
@@ -46,7 +65,7 @@ def reminder_node(state: CareMateState):
 
     reminders.append(
         {
-            "request": state["message"],
+            "request": message,
             "result": response,
         }
     )
@@ -56,12 +75,25 @@ def reminder_node(state: CareMateState):
         "reminders": reminders,
     }
 
-
 def health_node(state: CareMateState):
 
-    response = health.run(state["message"])
-    save_health_note(
-        state["message"],
+    message = state["message"]
+
+    intent = health.detect_intent(message)
+
+    if intent == "VIEW":
+
+        response = health_tool.format_health_notes()
+
+        return {
+            "response": response,
+            "health_notes": state["health_notes"],
+        }
+
+    response = health.run(message)
+
+    health_tool.save(
+        message,
         response
     )
 
@@ -69,7 +101,7 @@ def health_node(state: CareMateState):
 
     health_notes.append(
         {
-            "question": state["message"],
+            "question": message,
             "advice": response,
         }
     )
@@ -98,10 +130,10 @@ def conversation_node(state: CareMateState):
     message = context + "\nCurrent user message:\n" + state["message"]
 
     response = conversation.run(message)
-    save_conversation(
-        state["message"],
-        response
-    )
+    conversation_tool.save(
+    state["message"],
+    response
+)
 
     chat_history = history.copy()
 
@@ -127,10 +159,11 @@ def alert_node(state: CareMateState):
 def summary_node(state: CareMateState):
 
     response = summary.run(state["message"])
-    save_summary(
-        state["message"],
-        response
-    )
+    summary_tool.save(
+    state["message"],
+    response
+)
+    
     summaries = state["summaries"].copy()
 
     summaries.append(

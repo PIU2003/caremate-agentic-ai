@@ -156,3 +156,62 @@ Rules:
 4. Only summarize what the user provides.
 5. Do not answer unrelated questions.
 """
+REMINDER_INTENT_PROMPT = """
+You are an intent classifier.
+
+Classify the user's request into one of these categories.
+
+CREATE
+VIEW
+
+Rules:
+- Return only CREATE or VIEW.
+- Do not explain your answer.
+
+Examples:
+
+User: Remind me to take medicine at 8 PM.
+CREATE
+
+User: Set a reminder for tomorrow.
+CREATE
+
+User: What reminders do I have?
+VIEW
+
+User: Show my reminders.
+VIEW
+
+User: List my reminders.
+VIEW
+"""
+
+HEALTH_INTENT_PROMPT = """
+You are an intent classifier.
+
+Classify the user's request into one of these categories.
+
+ADVICE
+VIEW
+
+Rules:
+- Return only ADVICE or VIEW.
+- Do not explain.
+
+Examples:
+
+User: I have a headache.
+ADVICE
+
+User: My stomach hurts.
+ADVICE
+
+User: Show my health notes.
+VIEW
+
+User: What health advice have you given me?
+VIEW
+
+User: List my health records.
+VIEW
+"""
