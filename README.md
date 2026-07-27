@@ -11,10 +11,9 @@ CareMate AI is a multi-agent elderly-care assistant built with **LangGraph**, **
 Streamlit Community Cloud:
 
 ```
-https://YOUR_APP_NAME.streamlit.app
+https://caremate-agentic-ai.streamlit.app
 ```
 
-*(Replace with your deployed URL after publishing on [Streamlit Community Cloud](https://share.streamlit.io/).)*
 
 ---
 
@@ -253,7 +252,7 @@ caremate-agentic-ai/
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/caremate-agentic-ai.git
+git clone https://github.com/PIU2003/caremate-agentic-ai.git
 cd caremate-agentic-ai
 python -m venv .venv
 ```
@@ -276,10 +275,6 @@ Copy the template and fill in **local** secrets (do **not** commit `.env`):
 copy .env.example .env
 ```
 
-```
-GROQ_API_KEY=your_groq_api_key_here
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-```
 
 `.env` is listed in `.gitignore`. For Streamlit Cloud, add the same keys under **App settings → Secrets**.
 
@@ -339,7 +334,8 @@ SQLite (`caremate.db`) stores:
 
 ## Author
 
-**Ishan Indrajith**  
+ITBIN-2313-0002
+A.M Piumini Abeysinghe 
 BSc (Hons) Information Technology
 
 ---
