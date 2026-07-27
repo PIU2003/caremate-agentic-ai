@@ -1,0 +1,103 @@
+{
+  "total_queries": 5,
+  "hits": 5,
+  "hit_rate": 1.0,
+  "results": [
+    {
+      "query": "What should older adults know about high blood pressure?",
+      "expected": [
+        "01_blood_pressure"
+      ],
+      "retrieved_sources": [
+        "01_blood_pressure.txt",
+        "03_heart_health.txt",
+        "09_exercise_gentle.txt",
+        "02_blood_sugar.txt"
+      ],
+      "scores": [
+        0.7482,
+        0.5471,
+        0.4501,
+        0.4293
+      ],
+      "hit": true
+    },
+    {
+      "query": "How can I prevent falls at home?",
+      "expected": [
+        "05_fall_prevention"
+      ],
+      "retrieved_sources": [
+        "05_fall_prevention.txt",
+        "05_fall_prevention.txt",
+        "06_sleep_hygiene.txt",
+        "20_emergency_red_flags.txt"
+      ],
+      "scores": [
+        0.8237,
+        0.5565,
+        0.2881,
+        0.2781
+      ],
+      "hit": true
+    },
+    {
+      "query": "Tips for taking medicine safely every day",
+      "expected": [
+        "04_medication_safety"
+      ],
+      "retrieved_sources": [
+        "04_medication_safety.txt",
+        "21_healthy_daily_routine.txt",
+        "01_blood_pressure.txt",
+        "22_appointment_prep.txt"
+      ],
+      "scores": [
+        0.6224,
+        0.553,
+        0.4102,
+        0.4032
+      ],
+      "hit": true
+    },
+    {
+      "query": "Signs of low blood sugar and what to do",
+      "expected": [
+        "02_blood_sugar"
+      ],
+      "retrieved_sources": [
+        "02_blood_sugar.txt",
+        "02_blood_sugar.txt",
+        "08_hydration.txt",
+        "22_appointment_prep.txt"
+      ],
+      "scores": [
+        0.6695,
+        0.6584,
+        0.4544,
+        0.4218
+      ],
+      "hit": true
+    },
+    {
+      "query": "When should I call emergency services for chest pain?",
+      "expected": [
+        "03_heart_health",
+        "20_emergency_red_flags"
+      ],
+      "retrieved_sources": [
+        "20_emergency_red_flags.txt",
+        "03_heart_health.txt",
+        "01_blood_pressure.txt",
+        "03_heart_health.txt"
+      ],
+      "scores": [
+        0.5575,
+        0.4233,
+        0.3606,
+        0.3495
+      ],
+      "hit": true
+    }
+  ]
+}

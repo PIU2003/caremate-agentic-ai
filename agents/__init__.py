@@ -1,1 +1,1 @@
-from .manager import AgentManager
+# CareMate agents package

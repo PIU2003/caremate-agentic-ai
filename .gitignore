@@ -5,3 +5,7 @@ __pycache__/
 .streamlit/secrets.toml
 caremate.db
 *.db
+*.log
+.DS_Store
+streamlit-error.log
+streamlit.log

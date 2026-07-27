@@ -1,0 +1,142 @@
+[
+  {
+    "text": "# Blood Pressure in Older Adults Normal blood pressure for many older adults is around 120/80 mmHg, but targets may be individualized by a doctor. High blood pressure (hypertension) often has no symptoms and increases stroke and heart disease risk. Lifestyle support: reduce salt, stay active with light walking, limit alcohol, manage stress, and take prescribed medicine on time. Home monitoring: si",
+    "source": "01_blood_pressure.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "lcohol, manage stress, and take prescribed medicine on time. Home monitoring: sit quietly for 5 minutes, use a validated cuff, measure at the same time daily, and record readings for the clinician. Seek urgent care for sudden severe headache, chest pain, confusion, or blood pressure readings far above the usual range with symptoms.",
+    "source": "01_blood_pressure.txt",
+    "chunk_id": 1
+  },
+  {
+    "text": "# Blood Sugar and Diabetes Care Typical fasting blood sugar targets for many adults with diabetes are individualized; common clinic targets are often near 80-130 mg/dL before meals. Hypoglycemia signs: sweating, shaking, confusion, hunger, dizziness. Treat with fast sugar if conscious and protocol allows, then recheck. Hyperglycemia signs: thirst, frequent urination, fatigue, blurred vision. Tips:",
+    "source": "02_blood_sugar.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "Hyperglycemia signs: thirst, frequent urination, fatigue, blurred vision. Tips: eat regular meals, take medicine as prescribed, stay hydrated, and carry a glucose source if advised by a clinician. Older adults should never stop diabetes medicine without medical advice.",
+    "source": "02_blood_sugar.txt",
+    "chunk_id": 1
+  },
+  {
+    "text": "# Heart Health for Seniors Heart-healthy habits include light daily activity, a diet rich in vegetables and whole grains, not smoking, and controlling blood pressure and cholesterol. Warning signs of a possible heart attack: chest pressure, pain radiating to arm/jaw, shortness of breath, cold sweat, nausea. Call emergency services immediately for suspected heart attack. Do not drive yourself. Card",
+    "source": "03_heart_health.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "ncy services immediately for suspected heart attack. Do not drive yourself. Cardiac rehab and gentle walking programs can improve recovery after clinician approval.",
+    "source": "03_heart_health.txt",
+    "chunk_id": 1
+  },
+  {
+    "text": "# Medication Safety Use a pill organizer and set reminders for daily medicines. Keep an updated medication list including doses and allergies. Do not share prescription drugs. Avoid doubling doses if a dose was missed unless a pharmacist or doctor advises otherwise. Store medicines in a cool dry place away from children and pets. Ask a pharmacist about interactions when starting new over-the-count",
+    "source": "04_medication_safety.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "n and pets. Ask a pharmacist about interactions when starting new over-the-counter products.",
+    "source": "04_medication_safety.txt",
+    "chunk_id": 1
+  },
+  {
+    "text": "# Fall Prevention at Home Most falls in older adults happen at home. Reduce clutter, secure rugs, improve lighting, and install grab bars in bathrooms. Wear supportive non-slip shoes indoors. Stand up slowly after sitting or lying down. Exercise for balance: chair-supported standing, gentle tai chi if approved by a clinician. After a fall: check for injury, call for help if unable to get up safely",
+    "source": "05_fall_prevention.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "nician. After a fall: check for injury, call for help if unable to get up safely, and report falls to a doctor even without obvious injury.",
+    "source": "05_fall_prevention.txt",
+    "chunk_id": 1
+  },
+  {
+    "text": "# Better Sleep for Older Adults Keep a consistent bedtime and wake time. Limit caffeine after midday and avoid heavy meals late at night. Create a calm dark bedroom. Limit long daytime naps. If sleep problems persist with loud snoring, gasping, or daytime sleepiness, discuss sleep apnea screening with a clinician. Do not start sleeping pills without medical advice; they can increase fall risk.",
+    "source": "06_sleep_hygiene.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Nutrition for Older Adults Aim for balanced plates: vegetables, protein (fish, eggs, beans, lean meat), whole grains, and healthy fats. Protein helps preserve muscle. Calcium and vitamin D support bones; discuss supplements with a clinician. Drink water regularly; thirst sensation may decline with age. Limit ultra-processed foods high in salt and sugar. Soft, easy-to-chew options help if dental",
+    "source": "07_nutrition_seniors.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "ocessed foods high in salt and sugar. Soft, easy-to-chew options help if dental issues exist.",
+    "source": "07_nutrition_seniors.txt",
+    "chunk_id": 1
+  },
+  {
+    "text": "# Hydration Guidance Dehydration risk rises with age. Offer water regularly even without strong thirst. Signs of dehydration: dry mouth, dark urine, dizziness, confusion, constipation. Encourage fluids with meals and keep a water bottle nearby. People with heart or kidney disease may need fluid limits set by their clinician.",
+    "source": "08_hydration.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Gentle Exercise for Seniors Benefits: better balance, mood, blood pressure, and independence. Examples: daily walking, chair exercises, light stretching, water aerobics. Start slowly. Stop and seek care for chest pain, severe breathlessness, or sudden dizziness during activity. Aim for movement most days, tailored to ability and clinician guidance.",
+    "source": "09_exercise_gentle.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Mental Wellbeing and Loneliness Social connection reduces loneliness and supports cognitive health. Simple supports: phone calls with family, community groups, hobbies, short outdoor walks. Persistent sadness, withdrawal, sleep change, or talk of hopelessness needs professional support. Encourage speaking with a doctor or counselor; mental health care is part of overall health.",
+    "source": "10_mental_wellbeing.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Memory and Cognitive Health Occasional forgetfulness can be normal; sudden confusion or rapid decline needs medical review. Helpful habits: routines, calendars, medication organizers, adequate sleep, social engagement. Hearing and vision checks matter because sensory loss can look like memory problems. Do not self-diagnose dementia; seek clinical assessment for concerning changes.",
+    "source": "11_memory_cognition.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Joint Pain and Arthritis Comfort Gentle movement often helps stiffness more than complete rest. Heat packs, supportive shoes, and maintaining a healthy weight can reduce joint stress. Use pain medicines only as advised. Report sudden hot swollen joints or inability to bear weight. Physiotherapy exercises prescribed for osteoarthritis can improve function.",
+    "source": "12_arthritis_joints.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Breathing Comfort and Lung Health Sit upright during breathlessness. Practice slow pursed-lip breathing if taught by a clinician. Avoid smoke and strong fumes. Keep rescue inhalers accessible if prescribed. Urgent care: severe breathlessness at rest, blue lips, confusion, or chest pain. Vaccinations for influenza and pneumonia are often recommended for older adults\u2014ask a clinician.",
+    "source": "13_breathing_copd.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Skin Care in Older Adults Skin thins with age and tears more easily. Moisturize daily and avoid very hot baths. Check skin regularly for new wounds, redness over pressure points, or non-healing sores. Reposition regularly if mobility is limited. Keep bedding dry and clean. Infected wounds (increasing pain, pus, fever) need medical review.",
+    "source": "14_skin_care.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Vision and Hearing Support Annual eye checks help detect glaucoma, cataracts, and macular changes. Good lighting and contrast reduce fall risk. Keep glasses clean and updated. Hearing loss can increase social isolation; hearing aids and quieter environments help. Sudden vision loss or sudden hearing change is urgent.",
+    "source": "15_vision_hearing.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Digestion and Constipation Fiber-rich foods, fluids, and daily walking support bowel regularity. Do not ignore black stools, blood in stool, severe abdominal pain, or unexplained weight loss. Laxatives should be used carefully and preferably with pharmacist or clinician advice. Eat slowly and sit upright after meals if reflux is a problem.",
+    "source": "16_digestive_health.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Urinary Health Tips Stay hydrated unless fluid-restricted. Do not ignore burning urination, fever, or sudden confusion\u2014possible UTI signs in older adults. Scheduled toilet trips and easy bathroom access reduce accidents. Report blood in urine promptly. Discuss continence options with a clinician without embarrassment.",
+    "source": "17_urinary_health.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Vaccinations for Older Adults Common recommendations often include influenza yearly, COVID boosters as advised, pneumococcal vaccines, and shingles vaccine\u2014confirm with a clinician. Vaccines reduce severe illness risk. Keep a vaccination record. Mild arm soreness after shots is common; severe allergic reactions are rare but need emergency care.",
+    "source": "18_immunizations.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Tips for Family Caregivers Support routines for medicines, meals, and appointments. Use written lists and shared calendars. Watch for sudden changes in mobility, mood, or confusion. Caregivers need rest too\u2014ask for respite help and share tasks among family. In emergencies, call local emergency services and share the medication list with responders.",
+    "source": "19_caregiver_tips.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Emergency Red Flags Call emergency services for: chest pain, difficulty breathing, stroke signs (face droop, arm weakness, speech difficulty), severe bleeding, loss of consciousness, or a serious fall with head injury. Stroke phrase: Face, Arms, Speech, Time\u2014act fast. Do not wait to see if severe symptoms pass. Stay with the person and keep them as safe and calm as possible until help arrives.",
+    "source": "20_emergency_red_flags.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# A Healthy Daily Routine Morning: medicines with breakfast, light stretch, hydration. Daytime: short walk, social contact, nutritious meals. Evening: calm wind-down, limit screens, prepare next-day medicines. Keep emergency contacts visible near the phone. Review the daily checklist with caregivers weekly.",
+    "source": "21_healthy_daily_routine.txt",
+    "chunk_id": 0
+  },
+  {
+    "text": "# Preparing for Doctor Visits Bring: medication list, recent blood pressure or sugar logs, questions written down, and insurance or ID cards. Describe symptoms with timing, triggers, and severity. Mention falls, sleep issues, and mood changes. Ask about side effects and follow-up plans before leaving. Request written instructions when possible.",
+    "source": "22_appointment_prep.txt",
+    "chunk_id": 0
+  }
+]
