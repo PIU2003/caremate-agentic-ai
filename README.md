@@ -11,8 +11,7 @@ CareMate AI is a multi-agent elderly-care assistant built with **LangGraph**, **
 Streamlit Community Cloud:
 
 ```
-https://caremate-agentic-ai.streamlit.app
-```
+https://caremate-ai.streamlit.app/```
 
 
 ---
